@@ -17,7 +17,7 @@
 // require_once "../Orders_system/OrdersDAO.php";
 // require_once "../Orders_system/Products.php";
 // require_once "../Orders_system/ProductsDAO.php";
-// $productDAO = new ProductsDAO();
+// $productDAO = new ProductsDAO();  
 // $product_id = $productDAO->create(new Products(0, "test2", 120));
 // $product = $productDAO->read($product_id);
 // $product->setPrice(1000);
@@ -114,33 +114,33 @@
 // var_dump($book);
 
 // Students
-require_once "../Students/Grades.php";
-require_once "../Students/GradesDAO.php";
-require_once "../Students/Students.php";
-require_once "../Students/StudentsDAO.php";
-require_once "../Students/Subjects.php";
-require_once "../Students/SubjectsDAO.php";
-$studentDAO = new StudentsDAO();
-$student_id = $studentDAO->create(new Students(0, "test5", "test5", "test5"));
-$student = $studentDAO->read($student_id);
-$studentDAO->update($student);
-$studentDAO->delete($student);
-var_dump($student);
+// require_once "../Students/Grades.php";
+// require_once "../Students/GradesDAO.php";
+// require_once "../Students/Students.php";
+// require_once "../Students/StudentsDAO.php";
+// require_once "../Students/Subjects.php";
+// require_once "../Students/SubjectsDAO.php";
+// $studentDAO = new StudentsDAO();
+// $student_id = $studentDAO->create(new Students(0, "test5", "test5", "test5"));
+// $student = $studentDAO->read($student_id);
+// $studentDAO->update($student);
+// $studentDAO->delete($student);
+// var_dump($student);
 
-$subjectDAO = new SubjectsDAO();
-$subject_id = $subjectDAO->create(new Subjects(0, "test6", "test6"));
-$subject = $subjectDAO->read($subject_id);
-$subjectDAO->update($subject);
-$subjectDAO->delete($subject);
-var_dump($subject);
+// $subjectDAO = new SubjectsDAO();
+// $subject_id = $subjectDAO->create(new Subjects(0, "test6", "test6"));
+// $subject = $subjectDAO->read($subject_id);
+// $subjectDAO->update($subject);
+// $subjectDAO->delete($subject);
+// var_dump($subject);
 
-$gradeDAO = new GradesDAO();
-$grade_id = $gradeDAO->create(new Grades(0, $student->getStudents_id(), $subject->getSubjects_id(), 100));
+// $gradeDAO = new GradesDAO();
+// $grade_id = $gradeDAO->create(new Grades(0, $student->getStudents_id(), $subject->getSubjects_id(), 100));
 // $gradeDAO->create(new Grades(0, $student->getStudents_id(), $subject->getSubjects_id(), 50));
 // $gradeDAO->create(new Grades(0, $student->getStudents_id(), $subject->getSubjects_id(), 75));
-$grade = $gradeDAO->read($grade_id);
-$gradeDAO->update($grade);
+// $grade = $gradeDAO->read($grade_id);
+// $gradeDAO->update($grade);
 // $gradeDAO->delete($grade);
 
-$student = $studentDAO->read($student_id);
-var_dump($student);
+// $student = $studentDAO->read($student_id);
+// var_dump($student);            
